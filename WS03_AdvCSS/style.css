@@ -1,0 +1,157 @@
+p {
+    color: rgb(10, 1, 0);
+}
+
+body {
+    background-color: rgb(222, 226, 230);
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.content-box {
+    padding: 50px;
+    margin: 30px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #e99b0b;
+}
+
+.transition-button {
+    background-color: rgb(226, 107, 9);
+    padding: 20px 40px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.transition-button:hover {
+    background-color: rgb(20, 192, 57);
+}
+
+.animation-box {
+    width: 95px;
+    height: 70px;
+    background-color: rgb(8, 206, 67);
+    position: sticky;
+    animation: move_right 6s infinite alternate;
+}
+
+
+.animation-box2 {
+    width: 95px;
+    height: 70px;
+    background-color: rgb(63, 22, 211);
+    position: relative;
+    animation: move_left 6s infinite alternate;
+}
+
+
+@keyframes move_left {
+    from {
+        left: 1%;
+    }
+
+    to {
+        left: 95%;
+    }
+}
+
+@keyframes move_right {
+    from {
+        left: 95%;
+    }
+
+    to {
+        left: 1%;
+    }
+}
+
+.pseudo-list li:nth-child(odd) {
+    background-color: lightgray;
+}
+
+.pseudo-list li:nth-child(even) {
+    background-color: white;
+}
+
+.filter-image {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.filter-image:hover {
+    filter: grayscale(0%);
+}
+
+.quote {
+    position: relative;
+    padding-left: 20px;
+    font-style: italic;
+}
+
+.quote::before {
+    content: '“';
+    font-size: 60px;
+    position: absolute;
+    left:  0;
+    top: 0;
+    color: rgb(5, 0, 0);
+}
+
+.quote::after {
+    content: '”';
+    font-size: 60px;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    color: rgb(5, 0, 0);
+}
+
