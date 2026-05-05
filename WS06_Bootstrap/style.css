@@ -1,0 +1,12 @@
+.content{
+    padding: 20px;
+    text-align: center;
+}
+
+.kortit {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    flex-wrap: wrap;
+    
+}
